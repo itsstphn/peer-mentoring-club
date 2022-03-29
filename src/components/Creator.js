@@ -11,7 +11,7 @@ const Creator = () => {
       <p>This is not an official website. For educational purposes only.</p>
       <form name="Feedback" method="post" data-netlify="true">
         <p>Please leave a feedback</p>
-        <input type="text" />
+        <input type="text" name="feedback" />
         <button className="button-tertiary" type="submit">
           Submit
         </button>
