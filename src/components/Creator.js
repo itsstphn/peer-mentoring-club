@@ -9,7 +9,7 @@ const Creator = () => {
       </p>
       <p>A project submitted for the subject CCIT06.</p>
       <p>This is not an official website. For educational purposes only.</p>
-      <form name="Feedback" method="POST" data-netlify="true">
+      <form name="Feedback" netlify>
         <p>Please leave a feedback</p>
         <input type="text" />
         <button className="button-tertiary" type="submit">
