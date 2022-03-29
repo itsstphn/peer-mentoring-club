@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Creator from "./components/Creator";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Register from "./pages/Register";
 
 import Courses from "./pages/Courses";
@@ -12,7 +12,7 @@ import Events from "./pages/Events";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/courses" element={<Courses></Courses>}></Route>
           <Route path="/events" element={<Events></Events>}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
       <Footer></Footer>
       <Creator></Creator>
