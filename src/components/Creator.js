@@ -12,7 +12,7 @@ const Creator = () => {
       <form name="feedback" method="post">
         <p>Please leave a feedback</p>
         <input type="hidden" name="form-name" value="feedback" />
-        <input type="text" name="feedback" />
+        <input type="text" name="content" />
         <button className="button-tertiary" type="submit">
           Submit
         </button>
