@@ -1,13 +1,82 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow-x: hidden;
+  --primary-color: #ff1654;
+  --secondary-color: #181d2f;
+  --tertiary-color: #f3e5f5;
+}
+
+.button-primary {
+  background-color: #ff1654;
+  color: #ffffff;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 16px;
+  width: 173px;
+  height: 44px;
+
+  border: 2px #ff1654 solid;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  border: 2px #ff1654 solid;
+  color: #ff1654;
+  background-color: #ffffff00;
+  height: 44px;
+}
+
+.button-secondary {
+  background-color: #fff;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 16px;
+  width: 173px;
+  height: 38px;
+  margin-left: 2rem;
+  border: none;
+  cursor: pointer;
+  border: 2px #fff solid;
+}
+
+.button-secondary:hover {
+  color: #fff;
+  background-color: #ffffff00;
+}
+
+.button-tertiary {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: 3px var(--secondary-color) solid;
+  margin: 0;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  font-size: 16px;
+  width: 173px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.button-tertiary:hover {
+  color: var(--secondary-color);
+  background-color: var(---tertiary-color);
+}
+
+@media screen and (max-width: 890px) {
+  button[class^="button-"] {
+    width: 150px;
+    height: 35px;
+    font-size: 0.8rem;
+  }
 }

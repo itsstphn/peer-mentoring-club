@@ -1,0 +1,30 @@
+.creator {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.creator > * {
+  margin: 0.5rem;
+}
+
+.creator form p {
+  margin: 1rem;
+  text-align: center;
+}
+.creator form input {
+  padding: 0.5rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-right: 4px;
+}
+
+.creator form button {
+  height: 2.3rem;
+  font-size: 0.8rem;
+  width: 100px;
+  cursor: pointer;
+}

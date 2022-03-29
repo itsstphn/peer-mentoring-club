@@ -1,0 +1,110 @@
+.navbar {
+  background-color: var(--secondary-color);
+  color: #eeeeee;
+  height: 100px;
+  padding: 0.7rem 2rem;
+}
+
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-section img {
+  width: 60px;
+  margin-right: 1.5rem;
+}
+
+.navbar .logo-section img[alt^="club-"] {
+  width: 100px;
+}
+
+.navbar .logo-section .brand-name h2 a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.navbar .nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-section ul {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+
+  list-style: none;
+}
+
+.navbar .nav-section ul li {
+  color: #eeeeee;
+  font-size: 13px;
+  font-weight: 400;
+
+  margin: 0 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar .nav-section ul li:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+@media screen and (max-width: 890px) {
+  .navbar {
+    width: 100%;
+    height: unset;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar .container {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar .container .logo-section {
+    /* width: 100%; */
+    justify-content: center;
+  }
+
+  .navbar .container .logo-section img {
+    width: 30px;
+    margin-right: 0.2rem;
+  }
+  .navbar .logo-section img[alt^="club-"] {
+    width: 60px;
+  }
+
+  .navbar .logo-section .brand-name h2 a {
+    display: block;
+    font-size: 15px;
+    letter-spacing: normal;
+    width: fit-content;
+
+    /* line-height: 1px; */
+  }
+
+  .navbar .nav-section {
+    flex-direction: column;
+  }
+
+  .navbar .nav-section ul {
+    padding-bottom: 0.5rem;
+  }
+
+  .navbar .nav-section button {
+    display: none;
+  }
+}

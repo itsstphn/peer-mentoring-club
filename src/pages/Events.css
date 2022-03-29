@@ -1,0 +1,36 @@
+.events {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 0;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+
+.events .upcoming {
+  display: flex;
+  flex-direction: column;
+  flex: start;
+  padding: 2rem;
+  text-align: center;
+}
+
+.events .upcoming h2 {
+  margin: 1rem auto;
+}
+
+.events .upcoming p {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 890px) {
+  .events {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .events .upcoming {
+    padding-top: 0;
+  }
+}
