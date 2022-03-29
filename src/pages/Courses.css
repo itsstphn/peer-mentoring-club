@@ -16,3 +16,17 @@
 .courses p {
   margin: 3px 0;
 }
+
+@media screen and (max-width: 890px) {
+  .courses {
+    padding: 3rem;
+  }
+
+  .courses h3 {
+    font-size: 1rem;
+  }
+
+  .courses p {
+    font-size: 0.9rem;
+  }
+}
